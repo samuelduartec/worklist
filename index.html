@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkList</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap" rel="stylesheet">>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="text/javascript" defer ></script>
+</head>
+<body>              
+<div class="list roundborder">
+    <div class="date">
+    <div class="dateleft">
+    <div id="datenumber"></div>
+    <div>
+      <div id="datemonth"></div>
+      <div id="dateyear"></div>  
+        </div>
+    </div>
+<div id="datetext"></div>
+</div>
+<form onsubmit="addnewtask(event)" > 
+<input type="text" name="tasktext" autocomplete="off" placeholder="nueva tarea" class="roundborder">
+<button type="submit" class="addtaskbutton">+</button>
+<button type="button" class="orderbutton roundborder" onclick="renderorderedtasks()">ordenar</button>
+</form>
+<div id="taskscontainer"></div>
+</div>
+    
+</body>
+</html>
